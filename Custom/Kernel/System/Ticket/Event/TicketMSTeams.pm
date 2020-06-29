@@ -222,7 +222,7 @@ sub Run {
             return;
         }
   	    
-		my $TicketURL = $HttpType.'://'.$FQDN.'/'.$ScriptAlias.'index.pl?Action=AgentTicketPrint;TicketID='.$TicketID;	
+		my $TicketURL = $HttpType.'://'.$FQDN.'/'.$ScriptAlias.'index.pl?Action=AgentTicketZoom;TicketID='.$TicketID;	
 		
 		# For Asynchronous sending
 		my $TaskName = substr "Recipient".rand().$MSTeamWebhookURL, 0, 255;
